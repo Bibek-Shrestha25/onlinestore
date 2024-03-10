@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../Components/CSS/Register.css'
 
 const Register = () => {
   return (
@@ -128,7 +129,7 @@ const Register = () => {
                           id="password"
                           placeholder="Password"
                         />
-                      </div>
+                      
                       <label htmlFor="cpassword">Confirm Password</label>
                       <input
                         type="password"
@@ -136,6 +137,7 @@ const Register = () => {
                         id="cpassword"
                         placeholder="Confirm Password"
                       />
+                      </div>
                     </div>
                   </div>
 

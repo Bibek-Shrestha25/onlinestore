@@ -8,6 +8,8 @@ import About_us from "./Pages/About_us";
 import Register from "./Pages/Register";
 import Login from "./Pages/Log_in";
 import Category from "./Pages/Category";
+import Cart from "./Pages/Cart";
+import Products from "./Pages/Products";
 
 const MyRoutes = () => {
   return (
@@ -21,6 +23,8 @@ const MyRoutes = () => {
           <Route path="/about" element={<About_us />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path  = "/cart" element= {<Cart/>}></Route>
+          <Route path  = "/products" element= {<Products/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
