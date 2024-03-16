@@ -10,6 +10,11 @@ import Login from "./Pages/Log_in";
 import Category from "./Pages/Category";
 import Cart from "./Pages/Cart";
 import Products from "./Pages/Products";
+import Display from "./Components/Display";
+import Productdetails from "./Pages/Productdetails";
+import MyCounter from "./Components/reducers/MyCounter";
+import Counter from "./Components/Counter";
+
 
 const MyRoutes = () => {
   return (
@@ -19,12 +24,19 @@ const MyRoutes = () => {
           <Route index element={<App />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/home" element={<Home />} />
+
           <Route path="/category" element={<Category />} />
           <Route path="/about" element={<About_us />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path  = "/cart" element= {<Cart/>}></Route>
-          <Route path  = "/products" element= {<Products/>}></Route>
+
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/display" element={<Display />} />
+          <Route path="product/:id" element={<Productdetails />} />
+          <Route path="mycounter" element={<MyCounter />} />
+          <Route path="counter" element={<Counter />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

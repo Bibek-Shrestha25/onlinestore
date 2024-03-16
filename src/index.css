@@ -2,21 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.submit{
-    @apply bg-green-500 px-5 py-1;
-    @apply hover:bg-green-500;
-    @apply active:bg-red-500;
 
+button{
+    @apply text-black font-bold py-2 px-4 rounded m-3;
 }
 
-th, td{
-    @apply py-2 px-4 border-2;
-}
-
-tr:first-child th:first-child{
-    /* @apply rounded-tl-md */
-}
-
-.button{
-color: blue;
+.edit{
+    @apply float-right  bg-green-400;
 }

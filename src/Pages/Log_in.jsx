@@ -1,47 +1,65 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
-  return <>
-  <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="card login-container">
-              <div class="card-header text-center">
-                <h3>Login</h3>
-              </div>
-              <div class="card-body">
-                <form>
-                  <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Enter email"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Password</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="password"
-                      placeholder="Password"
-                    />
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-block">
-                    Login
-                  </button>
-                </form>
-              </div>
-              <div class="card-footer text-center">
-                Don't have an account? <a href="">Register</a>
-              </div>
+  return (
+    <div className="container mt-5">
+      <div className="row justify-content-center">
+        <div className="col-md-6">
+          <div className="card">
+            <div className="card-header bg-slate-400 text-white text-center">
+              LOGIN TO YOUR ACCOUNT
+            </div>
+            <div className="card-body">
+              <form>
+                <div className="mb-3">
+                  <label htmlFor="email" className="form-label">
+                    Email address
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="password" className="form-label">
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="password"
+                    placeholder="Password"
+                  />
+                </div>
+                <div className="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="rememberMe"
+                  />
+                  <label className="form-check-label" htmlFor="rememberMe">
+                    Remember Me
+                  </label>
+                </div>
+                <button type="submit" className="btn btn-primary btn-block">
+                  Login
+                </button>
+              </form>
+            </div>
+            <div className="card-footer text-center">
+              <p className="mb-0">
+                Don't have an account? <Link to="/Register" />
+                Register
+              </p>
             </div>
           </div>
         </div>
       </div>
-  </>;
+    </div>
+  );
 };
 
 export default Login;
